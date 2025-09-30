@@ -1,56 +1,46 @@
 {
-  "name": "module-alias",
-  "description": "Create aliases of directories and register custom module paths",
-  "version": "2.2.3",
-  "author": {
-    "name": "Nick Gavrilov",
-    "email": "artnikpro@gmail.com"
-  },
-  "scripts": {
-    "test": "npm run lint && npm run testonly",
-    "testonly": "NODE_ENV=test mocha test/specs.js",
-    "testonly-watch": "NODE_ENV=test mocha -w test/specs.js",
-    "lint": "standard"
-  },
-  "bugs": {
-    "url": "https://github.com/ilearnio/module-alias/issues"
-  },
-  "homepage": "https://github.com/ilearnio/module-alias",
-  "keywords": [
-    "extend",
-    "modules",
-    "node",
-    "path",
-    "resolve"
-  ],
-  "license": "MIT",
+  "name": "super-alias",
+  "version": "1.0.0",
+  "description": "Enhanced, performance-optimized module aliasing system for Node.js with TypeScript support and hot reload capabilities.",
   "main": "index.js",
+  "types": "index.d.ts",
+  "type": "commonjs",
+  "author": "SixxHxRx.js",
+  "license": "MIT",
   "files": [
     "index.js",
     "register.js",
-    "README.md",
-    "LICENSE"
+    "index.d.ts"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ilearnio/module-alias.git"
-  },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "eslint": "^9.36.0",
-    "hello-world-classic": "ilearnio/hello-world-classic",
-    "husky": "^3.0.2",
-    "mocha": "^2.4.5",
-    "semver": "^6.1.1",
-    "standard": "^12.0.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run test"
-    }
+  "scripts": {
+    "test": "mocha"
   },
   "dependencies": {
+    "acorn": "^8.15.0",
+    "acorn-jsx": "^5.3.2",
+    "ajv": "^6.12.6",
+    "ajv-keywords": "^3.5.2",
+    "ansi-escapes": "^3.2.0",
     "chalk": "^5.4.1",
     "chokidar": "^4.0.3"
-  }
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ytsixx/super-alias.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ytsixx/super-alias/issues"
+  },
+  "homepage": "https://github.com/Ytsixx/super-alias#readme",
+  "keywords": [
+    "alias",
+    "module",
+    "nodejs",
+    "typescript",
+    "hot-reload",
+    "performance"
+  ]
 }
